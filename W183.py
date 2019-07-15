@@ -7,3 +7,14 @@ from PyTest import *
 ##   "yo", "Python" -> "yn"                                                    //
 ##   "hi", "" -> "h@"                                                          //
 ##///////////////////////////////////////////////////////////////////////////////
+
+a = input()
+b = input()
+
+def charString(a, b):
+    newA = a[-len(a)]
+    newB = b[-1]
+
+    return newA + newB
+    
+print(charString(a, b))

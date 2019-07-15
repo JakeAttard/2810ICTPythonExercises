@@ -6,3 +6,24 @@ from PyTest import *
 ##    1, 1, 2, 1, 1  -> 2                                                    //
 ##    1, 1, 1, 1, 1  -> 1                                                    //
 ##/////////////////////////////////////////////////////////////////////////////
+
+numArray = []
+
+for i in range(int(input())):
+    numArray.append(int(input()))
+
+last = None
+sameNum = False
+clumps = 0
+
+for i in numArray:
+    if last == i:
+        if not sameNum:
+            clumps += 1
+            sameNum = True
+    else:
+        sameNum = False
+
+    last = i
+
+print(clumps)

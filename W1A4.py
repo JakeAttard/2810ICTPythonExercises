@@ -7,3 +7,13 @@ from PyTest import *
 ##   "dog", "cat" -> "dogcat"                                                //
 ##   "abc", "" -> "abc"                                                      //
 ##/////////////////////////////////////////////////////////////////////////////
+
+a = input()
+b = input()
+
+if not a:
+    print('')
+elif not b:
+    print('')
+else:
+    print("".join([a, b]))

@@ -6,3 +6,11 @@ from PyTest import *
 ##    6, 1, 2, 3  -> True                                                    //
 ##    3, 2, 1 -> False                                                       //
 ##/////////////////////////////////////////////////////////////////////////////
+
+num = int(input())
+nums = [num]
+
+if (nums[0] == 6) or (nums[len(nums) -1] == 6):
+    print("True")
+else:
+    print("False")
