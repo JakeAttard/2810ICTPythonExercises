@@ -12,18 +12,18 @@ numArray = []
 for i in range(int(input())):
     numArray.append(int(input()))
 
-lastNum = None
+last = None
 sameNum = False
 clumps = 0
 
 for i in numArray:
-    if lastNum == i:
+    if last == i:
         if not sameNum:
             clumps += 1
             sameNum = True
     else:
         sameNum = False
 
-    lastNum = i
+    last = i
 
 print(clumps)
